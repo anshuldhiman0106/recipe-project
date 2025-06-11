@@ -13,21 +13,21 @@ const handleSubmit = (e) => {
   const formData = new FormData(e.target);
 
   const id = nanoid();
-  const title = formData.get('title');
+  const name = formData.get('title');
   const instructions = formData.get('instructions');
   const ingredients = formData.get('ingredients');
   const cookingTime = formData.get('cookingTime');
   const servings = formData.get('servings');
 
 
-  if (!title || !instructions || !ingredients || !cookingTime || !servings) {
+  if (!name || !instructions || !ingredients || !cookingTime || !servings) {
     toast.error('Please fill in all fields');
     return;
   }
 
   const newRecipe = {
     id,
-    title,
+    name,
     instructions,
     ingredients: ingredients.split(',').map(item => item.trim()),
     cookingTime,
