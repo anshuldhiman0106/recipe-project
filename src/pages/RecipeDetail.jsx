@@ -45,8 +45,8 @@ const RecipeDetail = () => {
   };
 
   return (
-    <div className="relative z-3 h-screen flex flex-col justify-center items-center pt-16 bg-gray-50 p-4">
-      <div className="w-[fit-content] bg-gray-300 rounded-lg shadow-lg p-6 relative">
+    <div className="relative z-3 h-screen flex flex-col justify-start items-center pt-16 bg-gray-50 p-4">
+      <div className="w-3xl bg-gray-300 rounded-lg shadow-lg p-6 relative">
         <div className="right-12 top-7 absolute">
           <div className="relative" onClick={addtofav}>
             {!isAdded ? (
